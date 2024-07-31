@@ -1,0 +1,82 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+}
+h2{
+
+    text-align: center;
+    
+}
+.dashboard, .form-section, .transactions{
+
+    margin-bottom: 20px;
+}
+
+#totals p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+form{
+
+    display: flex;
+    flex-direction:column;
+}
+
+label{
+
+    margin: 5px 0;
+
+}
+
+input,select{
+
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button{
+
+    padding: 10px;
+    background-color: #483d8b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+
+    background-color: #3b2f8e;
+
+}
+
+.transactions ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+.transactions li {
+
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
