@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!--Add login page--> 
+    <div id="login-container" class="container">
+        <h1>Login</h1>
+        <input type="email" id="email-input" placeholder="Enter your email" aria-label="Email">
+        <input type="password" id="password-input" placeholder="Enter your password" aria-label="Password">
+        <button id="login-button">Login</button>
+        <button id="signup-button">Sign Up</button>
+        <div class="social-icons">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </div>
+    <!--Add  task management container -->
+    <div class="container" id="todo-container" style="display: none;">
+        <h1>To-Do List</h1>
+        <button id="open-modal-button">Add Task</button>
+        <button id="logout-button">Logout</button>
+        <ul id="task-list" aria-live="polite" aria-label="Task list">
+            <!-- Tasks will be dynamically added here -->
+            <li>Go to the gym</li>
+        </ul>
+    </div>
+     <!-- Add Task Modal -->
+     <div id="add-task-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Add New Task</h2>
+            <input type="text" id="modal-task-input" placeholder="Enter task here" aria-label="Task input">
+            <button id="modal-add-task-button">Add Task</button>
+        </div>
+    </div>
+     <!-- Task Template -->
+      <template id="task-template">
+        <li>
+            <span class="task-text"></span>
+            <button class="delete" aria-label="Delete task">Delete</button>
+        </li>
+      </template>
+    
+     <script src="App.js"></script>
+</body>
+</html>
