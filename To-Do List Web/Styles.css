@@ -155,8 +155,8 @@ h2 {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-bottom: 10px; /* Space between input and button */
+    box-sizing: border-box; 
+    margin-bottom: 10px;
 }
 
 /* Add Task button */
@@ -169,10 +169,6 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-}
-
-#modal-add-task-button:hover {
-    background-color: #45a049; /* Darker green */
 }
 
 template {
