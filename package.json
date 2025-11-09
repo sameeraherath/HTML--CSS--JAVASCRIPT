@@ -1,4 +1,12 @@
 {
+  "name": "html-css-javascript-projects",
+  "version": "1.0.0",
+  "description": "Collection of HTML, CSS, and JavaScript projects",
+  "scripts": {
+    "quote": "cd \"random quote generator\" && npm run start",
+    "quote:build": "cd \"random quote generator\" && npm run build",
+    "quote:dev": "cd \"random quote generator\" && npm run dev"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "firebase": "^10.12.5"
